@@ -1,131 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Project</title>
-    <link rel="stylesheet" href="\css\styles.css">
-</head>
-<body>
-    <div>
-        <header>
-            <h1> <img src="\images\logo.png" alt="logo" width="55" height="55"> I-G </h1>
-        
-            <nav> <!--  a navigation bar in the header for sections -->
-        
-                <a href="#home">Home</a> |
-                <a href="#about">About</a> |
-                <a href="#work">Work</a> |
-                <a href="#resume">Resume</a> |
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <section> 
-                <!-- Home section-->
-                <br>
-                <h2 id="home">HOME</h2> 
-                <h4>WELCOME TO MY WORLD</h4> 
-                <p>Sneak peak into what I've been up to</p>
-                <iframe width="500" height="250" src="https://www.youtube.com/embed/GeSbT5Cnero" title="A day in the life of a student in GOMYCODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <hr>
-            </section>
-            <section> 
-                <!-- About section-->
-        
-                <h2 id="about"><u>ABOUT</u></h2>
-                <br><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190626123927/untitlsssssed.png" alt="" width="500" height="250">
-                <p> Hi there! I am IG, a student of GOMYCODE and a passionate freelancer from <br> Nigeria, offering you fullstack web development and design. My expertise is <br>developing next-level websites and web applications including full frontend <br>and backend design with the MERN stack. I hope to hear from you. <br><a href="mailto:ifedrachukwu@yahoo.com"> click to contact me </a> </p> <hr>
-            </section>
-            <section> 
-                <!-- Work section-->
-                <h2 id="work"><u>WORK</u></h2> 
-                <p>A cross-section of my works are on display:</p> 
-                <br>
-                <table>
-                    <tr>
-                        <td><img src="https://cdn.pixabay.com/photo/2020/11/09/06/33/website-5725733_960_720.png" alt="" width="250" height="180"></td>
-                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwleiFQvS9KQTpTVJn-5UcwC6bBlgcHZXJiw&usqp=CAU" alt="" width="250" height="180"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://designmodo.com/wp-content/uploads/2015/07/1-Contact-form.jpg" alt="" width="250" height="180"></td>
-                        <td><img src="https://blog.tubikstudio.com/wp-content/uploads/2019/07/food_order_website_design_tubik-1-1024x768.png" alt="" width="250" height="180"></td>
-                    </tr>
-                </table>
-                <hr>
-            </section>
-            <section> 
-                <!-- Resume section-->
-                <h2 id="resume"><u>RESUME</u></h2> 
-                
-                <p>I'm skilled at:</p>
-                <ul type="square">
-                    <li>Coding:  HTML, PHP, cascading style sheets, and JavaScript for front-end design.</li>
-                    <li>Creating Responsive designs</li>
-                    <li>SEO</li>
-                    <li>Version control</li>
-                    <li>Visual designs</li>
-                </ul>             
-                <p>Also check me out on: </p> 
-                <dl>
-                    <dt>LinkedIn</dt>
-                    <dd> <a href="linkedIn.com"> IG's Networks </a></dd>
-                    <dt>Pinterest</dt>
-                    <dd><a href="pinterest.com"> See my interests </a></dd>
-                    <dt>Twitter</dt>
-                    <dd><a href="x.com">See what I have to say</a></dd>
-                    <dt>Discord</dt>
-                    <dd> <a href="discord.com"> Let's pally on Discord </a></dd>
-                </dl>
-                <hr>
-            </section>
-            <section> 
-                <!-- Contact section-->
-                <h2 id="contact"><u>CONTACT</u></h2> 
-                <section> 
-                   
-                    <div>
-                        <div>
-                            <h5>Work Address</h5>
-                            <p>Nenwe Street, Pipleline Kubwa</p>
-                        </div>
-                        
-                        <div>
-                            <h5>Telephone:</h5>
-                            <p>Calls - 08113334021 | WhatsApp - 08113330022</p>
-                        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.png" type="image/icon type" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href=""><img src="images/logo.png" /></a>
+        <ul class="nav--items">
+          <li><a href="#about--me">About</a></li>
+          <li><a href="#my--works">Work</a></li>
+          <li><a href="#my--resume">Resume</a></li>
+          <li><a href="#contact--me">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- start of main -->
+    <main class="container">
+      <!-- Home section -->
+      <section class="section--items section--odd section--items--home">
+        <div class="two--div container">
+          <h2>IG</h2>
+          <p>
+            Hi there! i am a upcoming web developer with long time experience in
+            this field​. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eligendi ex cumque quibusdam excepturi pariatur nemo ipsa
+            accusamus perspiciatis vero, praesentium tempore ullam! Rem iure ut
+            incidunt delectus assumenda quas unde! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, vitae error enim, voluptate
+            ipsa magnam optio cupiditate tempora non, rerum modi molestiae esse
+            incidunt. Numquam quidem culpa debitis nobis adipisci!Lorem
+          </p>
+        </div>
+        <div class="two--div container">
+          <img src="images/tun.png" alt="" />
+        </div>
+      </section>
+      <!-- About Me -->
+      <section
+        class="section--items section--even section--items--about container"
+        id="about--me"
+      >
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab,
+            voluptatibus saepe minus officiis est fugit laboriosam libero
+            inventore mollitia reprehenderit at sequi enim quis quisquam, ea
+            aliquid sapiente quas expedita!
+          </p>
+        </div>
+        <div>
+          <img src="images/1697840966316.png" alt="" />
+        </div>
+        <div>
+          <div>
+            <p><span>Name: </span>Ifediora Gerald</p>
+          </div>
+          <div>
+            <p><span>LinkedIn: </span> www.linkedin.com</p>
+          </div>
+          <div>
+            <p><span>Phone: </span> 08089808088</p>
+          </div>
+          <div>
+            <p><span>Github: </span></p>
+          </div>
+        </div>
+      </section>
 
-                    </div>
-                </section>
-        
-                <section>
-                    <div><p>Drop a message:</p></div>
-                    <div>
-                    <form action="">
-                    <input type="text" placeholder="Your Name"> <br> <br>
-                    <input type="text" placeholder="Your email address"> <br><br>
-                    <input type="text" placeholder="Subject"> <br> <br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea> <br><br>
-                    <input type="submit" value="Hit Me Up!">
-                    </div>
-                  
-                    </form>
-                </section>
-                
+      <!-- work section -->
+      <section
+        class="section--items section--odd section--items--about container"
+      >
+        <div>
+          <h2 id="my--works">My Works</h2>
+        </div>
 
+        <div class="work--divs">
+          <img
+            src="https://www.stockvault.net/data/2016/03/27/191716/preview16.jpg"
+            alt=""
+          />
+          <img
+            src="https://i0.wp.com/picjumbo.com/wp-content/uploads/light-bulb-shape-stairs-in-prague-free-photo.jpg?w=600&quality=80"
+            alt=""
+          />
+          <img
+            src="https://www.stockvault.net/data/2016/03/27/191716/preview16.jpg"
+            alt=""
+          />
+          <img
+            src="https://blackwhite.pictures/media/c/0904/illuminated-keyboard-2878.jpg"
+            alt=""
+          />
+          <img
+            src="https://i0.wp.com/picjumbo.com/wp-content/uploads/light-bulb-shape-stairs-in-prague-free-photo.jpg?w=600&quality=80"
+            alt=""
+          />
+          <img
+            src="https://blackwhite.pictures/media/c/0904/illuminated-keyboard-2878.jpg"
+            alt=""
+          />
+        </div>
+      </section>
 
-            </section>
+      <!-- resume section -->
+      <section class="section--items section--even">
+        <h2 id="my--resume">My Resume</h2>
+        <div>
+          <ol>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              consequuntur minima minus est illum iusto, tenetur quisquam
+              obcaecati nemo unde, beatae aliquam deleniti provident nulla ipsa
+              quidem sed labore culpa!
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non odit
+              in saepe aspernatur sequi reprehenderit dolores, quam voluptatem
+              sapiente optio voluptate amet corrupti sunt illum! Quos officia
+              vero voluptatem accusantium.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+              eum veritatis, fugiat corporis ipsam consequuntur, accusamus id
+              eligendi amet sed necessitatibus sit officiis dignissimos vero.
+              Magnam dolores consequatur quos labore.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem aperiam aliquid consequatur atque, laudantium
+              soluta facilis quod magni, quasi assumenda non numquam consectetur
+              distinctio necessitatibus asperiores aut iusto. Quidem, id!
+            </li>
+          </ol>
+        </div>
+      </section>
 
-        </main>
-        <footer>
-            <div>
-               
-                <p> <a href="#home"><img src="\images\logo.png" alt="logo" width="55" height="55"></a> Copyright © 2023 <a href="mailto:ifedrachukwu@yahoo.com">ifedrachukwu@yahoo..com</a> All Rights Reserved by IG                
-                </p>
-            </div>
-        </footer>
+      <!-- contact section -->
+      <section class="section--items section--odd container">
+        <h2 id="contact--me">Contact Me</h2>
 
-
-    </div>
-</body>
+        <div class="work--divs">
+          <div class="contact--box container">
+            <img src="images/location-dot-solid.svg" alt="" />
+            <h3>Locate Us</h3>
+            <p>lorem</p>
+          </div>
+          <div class="contact--box container">
+            <img src="images/phone-solid.svg" alt="" />
+            <h3>Call Us</h3>
+            <p>Lore</p>
+          </div>
+          <div class="contact--box container">
+            <img src="images/envelope-open-text-solid.svg" alt="" />
+            <h3>Send us a mail</h3>
+            <p>Lorem ipsum dolor sit amet c.</p>
+          </div>
+        </div>
+        <div class="work--divs">
+          <form action="">
+            <input type="text" placeholder="Your Name" />
+            <input type="text" name="" id="" placeholder="Your Email Address" />
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+            <textarea name="" id="" cols="30" rows="5"> </textarea>
+          </form>
+          <a href="">Send Message!</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <a href="">Privacy</a>
+          <a href="">Terms</a>
+          <a href="">Contact</a>
+        </div>
+        <div>
+          <p>Copyright 2023, IG</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
